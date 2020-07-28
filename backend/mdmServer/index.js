@@ -8,7 +8,7 @@ const { mongoose } =require('./database');
 app.set('port',process.env.PORT || 3030);
 
 //middleware
-app.use(cors({origin: 'http://192.168.1.16:3030'})); 
+app.use(cors({origin: 'http://192.168.1.14:3030'})); 
  app.use(cors({origin: 'http://localhost:4200'}));
 app.use(cors({origin: 'http://localhost:3030'}));
 app.use(morgan('dev'));
