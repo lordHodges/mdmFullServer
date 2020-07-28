@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">MDM</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (router)="(operador)"
+          >Home <span class="sr-only"></span></a
+        >
+      </li>
+      <li class="nav-item" hidden>
+        <a class="nav-link" href="#">Registrar Mantenimiento</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-cog" aria-hidden="true"></i>
+          Ajustes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="operador" routerLinkActive="active">Operador</a>
+          <a class="dropdown-item" routerLink="equipo" routerLinkActive="active">Equipo</a>
+          <a class="dropdown-item" routerLink="">Operador</a>
+          <a class="dropdown-item" routerLink="">Operador</a>
+
+         <!--  <div class="dropdown-divider"></div> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

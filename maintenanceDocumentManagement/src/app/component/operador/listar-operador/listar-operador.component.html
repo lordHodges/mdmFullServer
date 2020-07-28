@@ -1,0 +1,51 @@
+<div id="lista_items" role="tablist" aria-multiselectable="true">
+  <div
+    class="card"
+    *ngFor="let operador of operadorService.operadores; let i = index"
+  >
+    <div class="card-header" role="tab" id="{{ i }}">
+      <h5 class="mb-0">
+        <a
+          data-toggle="collapse"
+          data-parent="#lista_items"
+          href="#List-{{ i }}"
+          aria-expanded="true"
+        >
+          Nombre: {{ operador.name }}
+        </a>
+      </h5>
+    </div>
+    <div id="List-{{ i }}" class="collapse in" role="tabpanel">
+      <div class="card-body">
+        <div class="card mb-3" style="max-width: 580px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6nmwfhnWc0xLWKreKMZhLJZnfBT1xGQ7RgVIsAPzEuu6V3ia3&usqp=CAU"
+                class="card-img"  class="img-fluid mt-1"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{operador.name}}</h5>
+                <p class="card-text">
+                  RUN: {{operador.run}}
+                </p>
+                <p class="card-text">
+                  id:{{operador._id}}
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <a name="" id="" (click)="editarOperador(operador)" class="btn btn-warning"  role="button" style="margin-right: 5px;">editar <i class="fas fa-edit"></i></a>
+        <a name="" id="" class="btn btn-danger" (click)="eliminarOperador(operador._id, operadorForm)" role="button">eliminar <i class="fas fa-trash-alt"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+.
+├── app.component.css
+├── app.component.html
+├── app.component.spec.ts
+├── app.component.ts
+├── app.module.ts
+├── app-routing.module.ts
+├── component
+│   ├── equipo
+│   │   ├── detalle-equipo
+│   │   │   ├── detalle-equipo.component.css
+│   │   │   ├── detalle-equipo.component.html
+│   │   │   ├── detalle-equipo.component.spec.ts
+│   │   │   └── detalle-equipo.component.ts
+│   │   ├── listar-equipo
+│   │   │   ├── listar-equipo.component.css
+│   │   │   ├── listar-equipo.component.html
+│   │   │   ├── listar-equipo.component.spec.ts
+│   │   │   └── listar-equipo.component.ts
+│   │   └── registrar-equipo
+│   │       ├── registrar-equipo.component.css
+│   │       ├── registrar-equipo.component.html
+│   │       ├── registrar-equipo.component.spec.ts
+│   │       └── registrar-equipo.component.ts
+│   ├── operador
+│   │   ├── listar-operador
+│   │   │   ├── listar-operador.component.css
+│   │   │   ├── listar-operador.component.html
+│   │   │   ├── listar-operador.component.spec.ts
+│   │   │   └── listar-operador.component.ts
+│   │   └── registrar-operador
+│   │       ├── registrar-operador.component.css
+│   │       ├── registrar-operador.component.html
+│   │       ├── registrar-operador.component.spec.ts
+│   │       └── registrar-operador.component.ts
+│   ├── util
+│   │   ├── nav
+│   │   │   ├── nav.component.css
+│   │   │   ├── nav.component.html
+│   │   │   ├── nav.component.spec.ts
+│   │   │   └── nav.component.ts
+│   │   ├── toast
+│   │   │   ├── toast.component.css
+│   │   │   ├── toast.component.html
+│   │   │   ├── toast.component.spec.ts
+│   │   │   └── toast.component.ts
+│   │   ├── toast.service.spec.ts
+│   │   └── toast.service.ts
+│   └── views
+│       ├── home
+│       │   ├── home.component.css
+│       │   ├── home.component.html
+│       │   ├── home.component.spec.ts
+│       │   └── home.component.ts
+│       └── signin
+│           ├── signin.component.css
+│           ├── signin.component.html
+│           ├── signin.component.spec.ts
+│           └── signin.component.ts
+├── estructura.txt
+├── models
+│   ├── equipo.spec.ts
+│   ├── equipo.ts
+│   ├── operador.spec.ts
+│   └── operador.ts
+└── services
+    ├── equipo.service.spec.ts
+    ├── equipo.service.ts
+    ├── operador-service.service.spec.ts
+    └── operador-service.service.ts
+
+16 directories, 53 files

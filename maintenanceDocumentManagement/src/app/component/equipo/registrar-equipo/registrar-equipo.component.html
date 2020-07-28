@@ -1,0 +1,133 @@
+<div class="row">
+  <div class="col-5">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Registrar Equipo Nuevo</h4>
+        <form #equipoForm="ngForm" (ngSubmit)="registrarEquipo(equipoForm)">
+          <div class="form-group" hidden>
+            <label for="_id">_Id</label>
+            <input
+              type="text"
+              class="form-control"
+              name="_id"
+              id="_id"
+              
+              #_id="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo._id"
+            />
+          </div>
+          <!-- _Id -->
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              #name="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.name"
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="tipo-edificio-piso-n°equipo"
+              aria-describedby="helpId"
+            />
+          </div>
+          <!-- nombre -->
+          <div class="form-group">
+            <label for="marca">Marca</label>
+            <input
+              #marca="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.marca"
+              type="text"
+              class="form-control"
+              name="marca"
+              id="marca"
+              aria-describedby="marca"
+              placeholder="Marca"
+            />
+          </div>
+          <!-- marca -->
+          <div class="form-group">
+            <label for="modelo">modelo</label>
+            <input
+              #modelo="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.modelo"
+              type="text"
+              class="form-control"
+              name="modelo"
+              id="modelo"
+              aria-describedby=" "
+              placeholder="modelo"
+            />
+          </div>
+          <!-- modelo -->
+          <div class="form-group">
+            <label for="serie">N°Serie</label>
+            <input
+              #serie="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.serie"
+              type="text"
+              class="form-control"
+              name="serie"
+              id="serie"
+              aria-describedby="serie"
+              placeholder="serie"
+            />
+          </div>
+          <!-- serie -->
+          <div class="form-group">
+            <label for="localizacion">Local</label>
+            <input
+              #localizacion="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.localizacion"
+              type="text"
+              class="form-control"
+              name="localizacion"
+              id="localizacion"
+              aria-describedby="helpId"
+              placeholder="Edificio-Piso"
+            />
+          </div>
+          <!-- localizacion -->
+          <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <input
+              #tipo="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.tipo"
+              type="text"
+              class="form-control"
+              name="tipo"
+              id="tipo"
+              aria-describedby="helpId"
+              placeholder="UMA Chiller Fancoil etc"
+            />
+          </div>
+          <!-- tipo -->
+          <div class="form-group">
+            <label for="fechaIngreso">Fecha Ingreso</label>
+            <input
+              #fechaIngreso="ngModel"
+              [(ngModel)]="equipoService.selectedEquipo.fechaIngreso"
+              type="date"
+              class="form-control"
+              name="fechaIngreso"
+              id="fechaIngreso"
+              aria-describedby=""
+              placeholder=""
+            />
+          </div>
+        
+          <button
+            type="button"
+            (click)="guardarEquipo(equipoForm)"
+            class="btn btn-outline-primary btn-block"
+          >
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <app-listar-equipo></app-listar-equipo>
+  </div>
+</div>
+
