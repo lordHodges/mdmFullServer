@@ -12,7 +12,7 @@ import { ToastService } from '../../util/toast.service';
 export class ListarOperadorComponent implements OnInit {
 
   constructor(
-    private operadorService:OperadorServiceService,
+    public operadorService:OperadorServiceService,
     public toastService: ToastService
     ) { }
 

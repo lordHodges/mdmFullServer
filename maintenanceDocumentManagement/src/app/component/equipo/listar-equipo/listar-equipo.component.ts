@@ -17,7 +17,7 @@ export class ListarEquipoComponent implements OnInit {
 
   constructor(
     public toastService: ToastService,
-    private equipoService: EquipoService
+    public equipoService: EquipoService
   ) {
     this.equipos = equipoService.equipos;
   }

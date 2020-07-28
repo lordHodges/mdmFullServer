@@ -13,7 +13,7 @@ import { ListarOperadorComponent } from "../listar-operador/listar-operador.comp
 export class RegistrarOperadorComponent implements OnInit {
   constructor(
     public toastService: ToastService,
-    private operadorService: OperadorServiceService
+    public operadorService: OperadorServiceService
   ) {}
 
   ngOnInit() {

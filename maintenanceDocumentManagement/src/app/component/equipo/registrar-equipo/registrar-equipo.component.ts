@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 export class RegistrarEquipoComponent implements OnInit {
   constructor(
     public toastService: ToastService,
-    private equipoService: EquipoService
+    public equipoService: EquipoService
   ) {}
 
   ngOnInit() {
@@ -30,10 +30,10 @@ export class RegistrarEquipoComponent implements OnInit {
     }
   }
   guardarEquipo( form: NgForm ){
-    if (form.value._id) {     
+    if (form.value._id) {
       this.equipoService.putEquipo(form.value)
       .subscribe((res)=>{
-        
+
         this.toastService.show("Actualizado Correctamente",
          {
           classname: "bg-warning text-light",
@@ -42,16 +42,16 @@ export class RegistrarEquipoComponent implements OnInit {
         });
         this.resetForm(form);
         this.getEquipos();
-        
+
       });
-      
+
     } else {
       this.equipoService.postEquipo(form.value)
       .subscribe(
         (res) => {
           console.log(form.value);
 
-          this.toastService.show("Registro Exitoso", 
+          this.toastService.show("Registro Exitoso",
           {
             classname:"bg-success text-light",
             delay: 4000,
@@ -61,8 +61,8 @@ export class RegistrarEquipoComponent implements OnInit {
           this.resetForm(form);
         }
       );
-      
+
     }
   }
-  
+
 }
